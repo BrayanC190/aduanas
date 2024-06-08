@@ -12,7 +12,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
-// Import controllers
+
 const MetodosGet = require('./MetodosGet'); // Selects
 const MetodosPost = require('./MetodosPost'); //Inserts
 const MetodosPut = require('./MetodosPut'); //Update
