@@ -1,0 +1,165 @@
+
+  
+  html {
+    max-width: 15000px;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background); /* Asegurar que el fondo sea blanco */
+    padding: 0;
+    flex-direction: column;
+    max-width: 15000px;
+    color: var(--text);
+  }
+  
+  .table-container {
+    align-self: left;
+
+    margin-top: 2rem;
+    width:auto; /* Ajustar según sea necesario */
+  }
+  
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+  }
+  
+  .table {
+    width: 100%;
+    overflow-x: auto; 
+    min-width: 1000px; /* Asegurar que las tablas grandes se puedan desplazar */
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    background-color: var(--form-background);
+    color: var(--text);
+    text-align: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 2px solid var(--primary);
+  }
+  
+  .table thead th,
+  .table tbody td {
+    padding: 0.75rem; /* Ajustar padding para mejor apariencia */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid var(--secondary);
+  }
+  
+  .table thead th {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries for mobile devices */
+  @media (max-width: 768px) {
+    .table-container {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .table-wrapper {
+      padding: 0.5rem;
+    }
+  
+    .table thead th,
+    .table tbody td {
+      padding: 0.5rem;
+    }
+  
+    .table {
+      min-width: 1200px;
+    }
+  }
+  
+  /* Buscador styles */
+  .buscador-container {
+    margin: 1rem 0;
+  }
+  
+  .buscador-container input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--secondary);
+  }
+  
+  .buscador-container button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .buscador-container button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  /* Loading bar styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem; /* Añadir un margen superior */
+  }
+  
+  .balls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 5px;
+  }
+  
+  .ball.filled {
+    background-color: var(--primary-dark);
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

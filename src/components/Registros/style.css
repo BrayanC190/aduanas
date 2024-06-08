@@ -1,0 +1,131 @@
+:root {
+  --primary: #000000;
+  --primary-dark: #49a8cc;
+  --secondary: #666;
+  --background: #ffffff;
+  --form-background: #ffffff; /* Fondo del formulario cambiado a blanco */
+  --text: #212529;
+  --white: #ffffff;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background); /* Asegurar que el fondo sea blanco */
+  padding: 0; /* Quitar cualquier padding extra */
+}
+
+h1 {
+  color: var(--text);
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem; /* Añadir más espacio entre campos */
+  background-color: var(--form-background); /* Fondo del formulario */
+  width: 100%;
+  max-width: 1500px;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 2px solid var(--primary); /* Añadir un borde de color primario al formulario */
+  box-sizing: border-box; /* Asegurar que el padding y el borde se incluyan en el tamaño total */
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Ajustar el espacio entre los campos para mejor separación */
+}
+
+.input__wrapper {
+  flex: 1;
+  position: relative;
+  padding: 0.5rem 0 0;
+  margin-bottom: 1rem; /* Añadir más margen entre campos */
+}
+
+.input__field {
+  font-size: 1rem;
+  color: var(--text);
+  padding: 0.375rem 0.75rem; /* Añadir padding para mejor apariencia */
+  line-height: 1.5rem; /* Reducir el line-height */
+  height: 2.5rem; /* Ajustar la altura */
+  outline: 0;
+  border: 2px solid var(--secondary); /* Añadir borde a los campos de entrada */
+  width: 100%;
+  background: var(--white); /* Asegurar que el fondo de entrada sea blanco */
+  border-radius: 0.25rem; /* Hacer los campos rectangulares con un ligero redondeo */
+  transition: border-color 0.2s;
+  box-sizing: border-box; /* Asegurar que el padding y el borde se incluyan en el tamaño total */
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__label {
+  position: absolute;
+  top: 0;
+  left: 0.75rem; /* Alinear etiqueta con el padding de entrada */
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.input__field:placeholder-shown ~ .input__label {
+  cursor: text;
+  top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.input__field:focus {
+  border-color: var(--primary);
+}
+
+.input__field:not(:placeholder-shown) ~ .input__label,
+.input__field:focus ~ .input__label {
+  top: -1.3rem; /* Mover la etiqueta más arriba cuando se enfoca */
+  font-size: 1 rem;
+  font-weight: bold;
+  color: var(--primary);
+  background-color: var(--white); /* Color de fondo para superponer entrada */
+  padding: 0 0.25rem; /* Padding para crear espacio alrededor del texto */
+}
+
+.my-form__button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.my-form__button:hover {
+  background-color: var(--primary-dark);
+}
+.message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #4caf50;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border-radius: 5px;
+}
