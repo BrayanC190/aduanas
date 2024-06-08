@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-
+// Metodo que recibe valores y regresa la tabla
 function Tabla({ datos }) {
   return (
     <div className="table-container">

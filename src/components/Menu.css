@@ -1,12 +1,12 @@
 :root {
-    --primary: #1E3A8A; /* Un tono azul oscuro */
-    --primary-dark: #1A2C6A; /* Azul más oscuro para el hover */
-    --primary-light: #3B82F6; /* Azul claro para submenú */
-    --secondary: #E0E7FF; /* Azul muy claro para el texto */
+    --primary: #1E3A8A; 
+    --primary-dark: #1A2C6A; 
+    --primary-light: #3B82F6; 
+    --secondary: #E0E7FF; 
     --white: #FFFFFF;
     --text: #F0F0F0;
-    --background: #F3F4F6; /* Fondo claro */
-    --menu-background: #3B82F6; /* Fondo azul claro para el menú */
+    --background: #F3F4F6;
+    --menu-background: #3B82F6; 
 }
 
 body {

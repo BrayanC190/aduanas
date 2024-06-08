@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background); /* Asegurar que el fondo sea blanco */
+    background-color: var(--background); 
     padding: 0;
     flex-direction: column;
     max-width: 15000px;
@@ -23,19 +23,19 @@
     align-self: left;
 
     margin-top: 2rem;
-    width:auto; /* Ajustar según sea necesario */
+    width:auto; 
   }
   
   .table-wrapper {
     width: 100%;
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
   }
   
   .table {
     width: 100%;
     overflow-x: auto; 
-    min-width: 1000px; /* Asegurar que las tablas grandes se puedan desplazar */
+    min-width: 1000px; 
     border-collapse: collapse;
     border-radius: 0.5rem;
     background-color: var(--form-background);
@@ -47,7 +47,7 @@
   
   .table thead th,
   .table tbody td {
-    padding: 0.75rem; /* Ajustar padding para mejor apariencia */
+    padding: 0.75rem; 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -68,7 +68,7 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
   
-  /* Media Queries for mobile devices */
+ 
   @media (max-width: 768px) {
     .table-container {
       width: 100%;
@@ -114,12 +114,12 @@
     background-color: var(--primary-dark);
   }
   
-  /* Loading bar styles */
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem; /* Añadir un margen superior */
+    margin-top: 2rem; 
   }
   
   .balls {

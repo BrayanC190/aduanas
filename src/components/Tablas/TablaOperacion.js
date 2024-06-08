@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import FormComponent from './Form'; // Asegúrate de importar el componente FormComponent
+import FormComponent from './Form';
 import "./style.css";
 
 function TablaOperacion() {
@@ -47,7 +47,7 @@ function TablaOperacion() {
         referencia,
         estatus: nuevoEstatus
       });
-      // Actualizar los datos después de cambiar el estatus
+      // Actualiza los datos después de cambiar el estatus con el boton
       await buscarDatos(referencia);  // Espera a que los datos se actualicen
     } catch (error) {
       console.error('Error al actualizar el estatus:', error);
@@ -55,7 +55,6 @@ function TablaOperacion() {
   };
 
   useEffect(() => {
-    // No buscar datos automáticamente al cambiar la referencia
   }, [referencia]);
 
   return (

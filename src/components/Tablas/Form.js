@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+//
 const FormComponent = ({ datos }) => {
   const [isEditable, setIsEditable] = useState(false);
   const [formData, setFormData] = useState({
