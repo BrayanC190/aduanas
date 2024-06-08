@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FormComponent from './Form';
 import "./style.css";
-
+//Metodo que Permite buscar, modificar y cambiar el estatus de de las operaciones a travez de su referencia
+//Este llama al form para mostrar la poder mostar la informacion de la operacion
 function TablaOperacion() {
   const [datos, setDatos] = useState(null);
   const [referencia, setReferencia] = useState('');

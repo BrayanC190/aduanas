@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Tabla from './Tabla';
 import "./style.css";
-
+// Muestra la tabla opereracion modificada con los elementos mas importantes 
 function VerTablaOperacion() {
   const [tabla, setTabla] = useState([]);
   const tableName = "Operacion"; 
